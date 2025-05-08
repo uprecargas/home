@@ -119,7 +119,6 @@ body {
   box-shadow: 0 0.5vh 1.6vh rgba(0, 0, 0, 0.7);
   border-top: 0.1vh solid white;
   overflow-y: none;
-  position: fixed;
 }
 
 .menu-item {
@@ -151,6 +150,7 @@ width: 70%;
 margin-left: 15%;
 margin-right: 15%;
 }
+
 img.logo {
 display:none;
 }
