@@ -10,7 +10,6 @@
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #111, #00008b);
 
-
   }
   
   /* MENU LATERAL */
@@ -81,7 +80,7 @@ h1 {
 
   .sidebar {
     width: 100%;
-    height: auto;
+    height: 8vh;
     flex-direction: row;
     justify-content: flex-start;
     overflow-x: auto;
@@ -96,7 +95,15 @@ h1 {
   .menu-item {
     flex-shrink: 0;
   }
-
+  .menu-item img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
   .content {
     padding: 1rem;
   }
