@@ -23,6 +23,7 @@
     padding-left:1vh;
     border-right: 0.3vh solid white;
     padding-right:1vh;
+    overflow-y: auto;
   }
   
   .menu-item {
@@ -90,6 +91,7 @@ h1 {
     border-right: none;
     box-shadow: 0 0.5vh 1.6vh rgba(0, 0, 0, 0.7);
     border-top: 0.1vh solid white;
+    overflow-y: none;
 }
 
   .menu-item {
