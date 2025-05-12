@@ -9,9 +9,9 @@ body {
     height: 100vh;
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #111, #8224e3);
+    margin: 0;
     background-color: transparent;
-    overflow-x: hidden;  /* Evitar barra de rolagem horizontal */
-    overflow-y: auto;    /* Deixe a barra de rolagem vertical aparecer apenas quando necessário */
+    overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
 }
@@ -129,7 +129,7 @@ div#planos {
     width: 100%;
     margin-bottom: 2vh;
     font-size: 4vh;
-    margin-top: 15vh;
+    margin-top: 10vh;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -206,6 +206,31 @@ div#planos {
 .discount-button-container {
     width: 100%;
     text-align: center;
+    margin-top: 0vh;
+    margin-bottom: 3vh;
+}
+
+.discount-button {
+    background-color: #fff;
+    color: #8224e3;
+    border: none;
+    padding: 2vh 1.5vh;
+    cursor: pointer;
+    font-size: 2vh;
+    border-radius: 1vh;
+    border: 0.2vh solid #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0.1vh 0.1vh 0.1vh black;
+}
+
+.discount-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.discount-button-container {
+    width: 100%;
+    text-align: center;
     margin-top: 2vh;
     margin-bottom: 0;
     display: flex;
@@ -266,11 +291,11 @@ div#planos {
 
     .sidebar {
         width: 100%;
-        height: 8vh;
+        height: 7vh;
         flex-direction: row;
         justify-content: flex-start;
         overflow-x: auto;
-        gap: 1.5vh;
+        gap: 0.3vh;
         padding: 0;
         white-space: nowrap;
         border-right: none;
@@ -281,7 +306,15 @@ div#planos {
     .menu-item {
         flex-shrink: 0;
     }
-
+    
+   .menu-item {
+        width: 7vh;
+        height: 7vh;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+    }
+    
     .menu-item img {
         width: 80%;
         height: 80%;
@@ -305,11 +338,11 @@ div#planos {
         display: none;
     }
 
-    img.logomobile {
+        img.logomobile {
         display: flex;
-        width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
+        width: 65%;
+        margin-left: 17.5%;
+        margin-right: 17.5%;
     }
 
     img.logo {
@@ -345,10 +378,10 @@ div#planos {
         background-color: transparent;
         border: 0.3vh solid white;
         text-align: center;
-        padding: 2vh;
+        padding: 1.5vh;
         box-sizing: border-box;
         margin-right: 1%;
-        margin-bottom: 2vh;
+        margin-bottom: 1vh;
         min-width: auto;
         overflow: hidden;
         border-radius: 1vh;
@@ -397,9 +430,9 @@ div#planos {
         color: white;
         text-align: center;
         width: 100%;
-        margin-bottom: 1vh;
+        margin-bottom: 0;
         font-size: 3vh;
-        margin-top: 0;
+        margin-top: -0.5vh;
         font-family: 'Montserrat', sans-serif;
     }
 
