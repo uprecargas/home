@@ -2,75 +2,125 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página com Menu Lateral</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página com Menu Lateral</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <a href="https://uprecargas.com">
-        <img class="logomobile" src="imagens/uprecargas.png" alt="Up Recargas" />
+  <!-- Logo Mobile -->
+  <a href="https://uprecargas.com">
+    <img class="logomobile" src="imagens/uprecargas.png" alt="Up Recargas" />
+  </a>
+
+  <!-- Menu Lateral -->
+  <div class="sidebar">
+    <h6>APLICATIVOS</h6>
+
+    <a href="../tvexpress/index.html">
+      <div class="menu-item">
+        <img src="imagens/tvebw.png" alt="TVexpress" class="bw" />
+        <img src="imagens/tvecolor.png" alt="TVExpress" class="color" />
+      </div>
     </a>
-    <div class="sidebar">
-        <h6>APLICATIVOS</h6>
-        <a href="../tvexpress/">
-            <div class="menu-item">
-                <img src="imagens/tvebw.png" alt="TV Express" class="bw" />
-                <img src="imagens/tvecolor.png" alt="TVExpress" class="color" />
-            </div>
-        </a>
-        <a href="../redplay/">
-            <div class="menu-item">
-                <img src="imagens/redbw.png" alt="Red Play" class="bw" />
-                <img src="imagens/redcolor.png" alt="Red Play" class="color" />
-            </div>
-        </a>
-        <a href="../bluetv/">
-            <div class="menu-item">
-                <img src="imagens/bbw.png" alt="Blue TV" class="bw" />
-                <img src="imagens/bcolor.png" alt="Blue TV" class="color" />
-            </div>
-        </a>
-        <a href="../onpix/">
-            <div class="menu-item">
-                <img src="imagens/onpixbw.png" alt="Onpix" class="bw" />
-                <img src="imagens/onpixcolor.png" alt="Onpix" class="color" />
-            </div>
-        </a>
-        <a href="#">
-            <div class="menu-item">
-                <img src="imagens/eppibw.png" alt="ÍEppi Cinema" class="color" />
-                <img src="imagens/eppicolor.png" alt="Eppi Cinema" class="bw" />
-            </div>
-        </a>
-        <a href="../dunatv/">
-            <div class="menu-item">
-                <img src="imagens/dunabw.png" alt="Duna TV" class="bw" />
-                <img src="imagens/dunacolor.png" alt="Duna TV" class="color" />
-            </div>
-        </a>
-        <a href="../unitv/">
-            <div class="menu-item">
-                <img src="imagens/unibw.png" alt="UniTV" class="bw" />
-                <img src="imagens/unicolor.png" alt="Unitv" class="color" />
-            </div>
-        </a>
-        <a href="../hot/">
-            <div class="menu-item">
-                <img src="imagens/hotbw.png" alt="Hot" class="bw" />
-                <img src="imagens/hotcolor.png" alt="Hot" class="color" />
-            </div>
-        </a>
+
+    <a href="../redplay/index.html">
+      <div class="menu-item">
+        <img src="imagens/redbw.png" alt="Redplay" class="bw" />
+        <img src="imagens/redcolor.png" alt="Redplay" class="color" />
+      </div>
+    </a>
+
+    <a href="../bluetv/index.html">
+      <div class="menu-item">
+        <img src="imagens/bbw.png" alt="Bluetv" class="bw" />
+        <img src="imagens/bcolor.png" alt="Bluetv" class="color" />
+      </div>
+    </a>
+
+    <a href="../onpix/index.html">
+      <div class="menu-item">
+        <img src="imagens/onpixbw.png" alt="Onpix" class="bw" />
+        <img src="imagens/onpixcolor.png" alt="Onpix" class="color" />
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="menu-item">
+        <img src="imagens/eppibw.png" alt="ÍEppi Cinema" class="color" />
+        <img src="imagens/eppicolor.png" alt="Eppi Cinema" class="bw" />
+      </div>
+    </a>
+
+    <a href="../dunatv/index.html">
+      <div class="menu-item">
+        <img src="imagens/dunabw.png" alt="Duna TV" class="bw" />
+        <img src="imagens/dunacolor.png" alt="Duna TV" class="color" />
+      </div>
+    </a>
+
+    <a href="../unitv/index.html">
+      <div class="menu-item">
+        <img src="imagens/unibw.png" alt="UniTV" class="bw" />
+        <img src="imagens/unicolor.png" alt="Unitv" class="color" />
+      </div>
+    </a>
+
+    <a href="../hot/index.html">
+      <div class="menu-item">
+        <img src="imagens/hotbw.png" alt="Hot" class="bw" />
+        <img src="imagens/hotcolor.png" alt="Hot" class="color" />
+      </div>
+    </a>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <div class="content">
+    <a href="https://uprecargas.com">
+      <img class="logo" src="imagens/uprecargas.png" alt="Up Recargas" />
+    </a>
+
+    <div id="planos">
+      <h1 class="planos-title">Planos de Recargas Bluetv</h1>
+
+      <div class="container">
+        <div class="card" data-preco="22.50">
+          <h2>Plano Mensal</h2>
+          <img src="imagens/eppicinema.png" alt="Plano Mensal">
+          <h4>R$ 22,50</h4>
+          <button onclick="window.location.href='https://www.google.com'">COMPRAR</button>
+        </div>
+
+        <div class="card" data-preco="65.00">
+          <h2>Plano Trimestral</h2>
+          <img src="imagens/eppicinema.png" alt="Plano Trimestral">
+          <h4>R$ 65,00</h4>
+          <button onclick="window.location.href='https://www.google.com'">COMPRAR</button>
+        </div>
+
+        <div class="card" data-preco="110.00">
+          <h2>Plano Semestral</h2>
+          <img src="imagens/eppicinema.png" alt="Plano Semestral">
+          <h4>R$ 110,00</h4>
+          <button onclick="window.location.href='https://www.google.com'">COMPRAR</button>
+        </div>
+
+        <div class="card" data-preco="160.00">
+          <h2>Plano Anual</h2>
+          <img src="imagens/eppicinema.png" alt="Plano Anual">
+          <h4>R$ 160,00</h4>
+          <button onclick="window.location.href='https://www.google.com'">COMPRAR</button>
+        </div>
+      </div>
+
+      <div class="discount-button-container">
+        <button class="discount-button" onclick="aplicarDesconto()">APLICAR DESCONTO</button>
+      </div>
     </div>
-    <div class="content">
+  </div>
 
-    <a href="https://uprecargas.com">
-    <img class="logo" src="imagens/uprecargas.png" alt="Up Recargas" />
-    </a>
-
-</div>
   <script src="script.js"></script>
-    </body>
+</body>
 
 </html>
