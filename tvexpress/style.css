@@ -9,9 +9,9 @@ body {
     height: 100vh;
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #111, #8224e3);
-    margin: 0;
     background-color: transparent;
-    overflow-y: auto;
+    overflow-x: hidden;  /* Evitar barra de rolagem horizontal */
+    overflow-y: auto;    /* Deixe a barra de rolagem vertical aparecer apenas quando necessário */
     scrollbar-width: thin;
     scrollbar-color: transparent transparent;
 }
@@ -129,7 +129,7 @@ div#planos {
     width: 100%;
     margin-bottom: 2vh;
     font-size: 4vh;
-    margin-top: 10vh;
+    margin-top: 15vh;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -206,8 +206,10 @@ div#planos {
 .discount-button-container {
     width: 100%;
     text-align: center;
-    margin-top: 0vh;
-    margin-bottom: 3vh;
+    margin-top: 2vh;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center; 
 }
 
 .discount-button {
@@ -221,11 +223,40 @@ div#planos {
     border: 0.2vh solid #fff;
     font-family: 'Montserrat', sans-serif;
     text-shadow: 0.1vh 0.1vh 0.1vh black;
+    width: auto; /* Garantir que o botão não ocupe 100% da largura */
 }
 
 .discount-button:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: #fff;
+}
+
+.scroll-indicator {
+    transform: translateX(-50%);
+    cursor: pointer;
+    animation: float 1s ease-in-out infinite;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+    margin-left:4vh;
+}
+
+.scroll-indicator:hover {
+    opacity: 1;
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateX(-50%) translateY(8px);
+        opacity: 1;
+    }
+    90% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 0.6;
+    }
 }
 
 @media (max-width: 768px) {
@@ -235,11 +266,11 @@ div#planos {
 
     .sidebar {
         width: 100%;
-        height: 7vh;
+        height: 8vh;
         flex-direction: row;
         justify-content: flex-start;
         overflow-x: auto;
-        gap: 0.3vh;
+        gap: 1.5vh;
         padding: 0;
         white-space: nowrap;
         border-right: none;
@@ -250,15 +281,7 @@ div#planos {
     .menu-item {
         flex-shrink: 0;
     }
-    
-   .menu-item {
-        width: 7vh;
-        height: 7vh;
-        overflow: hidden;
-        position: relative;
-        cursor: pointer;
-    }
-    
+
     .menu-item img {
         width: 80%;
         height: 80%;
@@ -282,11 +305,11 @@ div#planos {
         display: none;
     }
 
-        img.logomobile {
+    img.logomobile {
         display: flex;
-        width: 65%;
-        margin-left: 17.5%;
-        margin-right: 17.5%;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 
     img.logo {
@@ -322,10 +345,10 @@ div#planos {
         background-color: transparent;
         border: 0.3vh solid white;
         text-align: center;
-        padding: 1.5vh;
+        padding: 2vh;
         box-sizing: border-box;
         margin-right: 1%;
-        margin-bottom: 1vh;
+        margin-bottom: 2vh;
         min-width: auto;
         overflow: hidden;
         border-radius: 1vh;
@@ -374,9 +397,9 @@ div#planos {
         color: white;
         text-align: center;
         width: 100%;
-        margin-bottom: 0;
+        margin-bottom: 1vh;
         font-size: 3vh;
-        margin-top: -0.5vh;
+        margin-top: 0;
         font-family: 'Montserrat', sans-serif;
     }
 
