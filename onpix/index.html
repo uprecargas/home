@@ -9,68 +9,118 @@
 </head>
 
 <body>
+    <!-- Logo para mobile -->
     <a href="https://uprecargas.com">
         <img class="logomobile" src="imagens/uprecargas.png" alt="Up Recargas" />
     </a>
+
+    <!-- Menu lateral -->
     <div class="sidebar">
         <h6>APLICATIVOS</h6>
-        <a href="../tvexpress/">
+
+        <a href="../tvexpress/index.html">
             <div class="menu-item">
-                <img src="imagens/tvebw.png" alt="TV Express" class="bw" />
-                <img src="imagens/tvecolor.png" alt="TVExpress" class="color" />
+                <img src="imagens/tvebw.png" alt="TVexpress" class="bw" />
+                <img src="imagens/tvecolor.png" alt="TVexpress" class="color" />
             </div>
         </a>
-        <a href="../redplay/">
+
+        <a href="../redplay/index.html">
             <div class="menu-item">
-                <img src="imagens/redbw.png" alt="Red Play" class="bw" />
-                <img src="imagens/redcolor.png" alt="Red Play" class="color" />
+                <img src="imagens/redbw.png" alt="Redplay" class="bw" />
+                <img src="imagens/redcolor.png" alt="Redplay" class="color" />
             </div>
         </a>
-        <a href="../bluetv/">
+
+        <a href="../bluetv/index.html">
             <div class="menu-item">
-                <img src="imagens/bbw.png" alt="Blue TV" class="bw" />
-                <img src="imagens/bcolor.png" alt="Blue TV" class="color" />
+                <img src="imagens/bbw.png" alt="Bluetv" class="bw" />
+                <img src="imagens/bcolor.png" alt="Bluetv" class="color" />
             </div>
         </a>
+
         <a href="#">
             <div class="menu-item">
                 <img src="imagens/onpixbw.png" alt="Onpix" class="color" />
                 <img src="imagens/onpixcolor.png" alt="Onpix" class="bw" />
             </div>
         </a>
-        <a href="../eppicinema/">
+
+        <a href="../eppicinema/index.html">
             <div class="menu-item">
-                <img src="imagens/eppibw.png" alt="ÍEppi Cinema" class="bw" />
+                <img src="imagens/eppibw.png" alt="Eppi Cinema" class="bw" />
                 <img src="imagens/eppicolor.png" alt="Eppi Cinema" class="color" />
             </div>
         </a>
-        <a href="../dunatv/">
+
+        <a href="../dunatv/index.html">
             <div class="menu-item">
                 <img src="imagens/dunabw.png" alt="Duna TV" class="bw" />
                 <img src="imagens/dunacolor.png" alt="Duna TV" class="color" />
             </div>
         </a>
-        <a href="../unitv/">
+
+        <a href="../unitv/index.html">
             <div class="menu-item">
                 <img src="imagens/unibw.png" alt="UniTV" class="bw" />
-                <img src="imagens/unicolor.png" alt="Unitv" class="color" />
+                <img src="imagens/unicolor.png" alt="UniTV" class="color" />
             </div>
         </a>
-        <a href="../hot/">
+
+        <a href="../hot/index.html">
             <div class="menu-item">
                 <img src="imagens/hotbw.png" alt="Hot" class="bw" />
                 <img src="imagens/hotcolor.png" alt="Hot" class="color" />
             </div>
         </a>
     </div>
+
+    <!-- Conteúdo principal -->
     <div class="content">
+        <a href="https://uprecargas.com">
+            <img class="logo" src="imagens/uprecargas.png" alt="Up Recargas" />
+        </a>
 
-    <a href="https://uprecargas.com">
-    <img class="logo" src="imagens/uprecargas.png" alt="Up Recargas" />
-    </a>
+        <div id="planos">
+            <h1 class="planos-title">Planos de Recargas Onpix</h1>
 
-</div>
-  <script src="script.js"></script>
-    </body>
+            <div class="container">
+                <div class="card" data-preco="22.50">
+                    <h2>Plano Mensal</h2>
+                    <img src="imagens/onpix.png" alt="Plano Mensal">
+                    <h4>R$ 22,50</h4>
+                    <button onclick="window.location.href='https://www.google.com'">COMPRAR</button>
+                </div>
+
+                <div class="card" data-preco="65.00">
+                    <h2>Plano Trimestral</h2>
+                    <img src="imagens/onpix.png" alt="Plano Trimestral">
+                    <h4>R$ 65,00</h4>
+                    <button onclick="window.location.href='https://www.google.com'">COMPRAR</button>
+                </div>
+
+                <div class="card" data-preco="110.00">
+                    <h2>Plano Semestral</h2>
+                    <img src="imagens/onpix.png" alt="Plano Semestral">
+                    <h4>R$ 110,00</h4>
+                    <button onclick="window.location.href='https://www.google.com'">COMPRAR</button>
+                </div>
+
+                <div class="card" data-preco="160.00">
+                    <h2>Plano Anual</h2>
+                    <img src="imagens/onpix.png" alt="Plano Anual">
+                    <h4>R$ 160,00</h4>
+                    <button onclick="window.location.href='https://www.google.com'">COMPRAR</button>
+                </div>
+            </div>
+
+            <div class="discount-button-container">
+                <button class="discount-button" onclick="aplicarDesconto()">APLICAR DESCONTO</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 
 </html>
