@@ -239,7 +239,7 @@ div#planos {
         flex-direction: row;
         justify-content: flex-start;
         overflow-x: auto;
-        gap: 1vh;
+        gap: 0.5vh;
         padding: 0;
         white-space: nowrap;
         border-right: none;
