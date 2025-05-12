@@ -129,7 +129,7 @@ div#planos {
     width: 100%;
     margin-bottom: 2vh;
     font-size: 4vh;
-    margin-top: 15vh;
+    margin-top: 10vh;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -206,7 +206,7 @@ div#planos {
 .discount-button-container {
     width: 100%;
     text-align: center;
-    margin-top: 3vh;
+    margin-top: 0vh;
     margin-bottom: 3vh;
 }
 
