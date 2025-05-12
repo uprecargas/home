@@ -15,3 +15,9 @@ function aplicarDesconto() {
         alert("Hoje não temos desconto nesse produto, tente outro produto ou volte Segunda-feira!");
     }
 }
+ function scrollParaProximaSecao() {
+      const proximaSecao = document.getElementById('segunda-secao');
+      if (proximaSecao) {
+        proximaSecao.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
