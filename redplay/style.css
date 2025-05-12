@@ -8,7 +8,7 @@ body {
     display: flex;
     height: 100vh;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #111, #00ff00);
+    background: linear-gradient(to right, #111, #f11a1a);
     margin: 0;
     background-color: transparent;
     overflow-y: auto;
@@ -185,7 +185,7 @@ div#planos {
 
 .card button {
     background-color: #fff;
-    color: #00ff00;
+    color: #f11a1a;
     border: none;
     padding: 2vh 1.5vh;
     cursor: pointer;
@@ -212,7 +212,7 @@ div#planos {
 
 .discount-button {
     background-color: #fff;
-    color: #00ff00;
+    color: #f11a1a;
     border: none;
     padding: 2vh 1.5vh;
     cursor: pointer;
@@ -351,7 +351,7 @@ div#planos {
 
     .card button {
         background-color: #fff;
-        color: #00ff00;
+        color: #f11a1a;
         border: none;
         padding: 1.2vh 1.5vh;
         cursor: pointer;
