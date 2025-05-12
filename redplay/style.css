@@ -9,9 +9,6 @@ body {
     height: 100vh;
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #111, #f11a1a);
-}
-
-body {
     margin: 0;
     background-color: transparent;
     overflow-y: auto;
@@ -87,8 +84,8 @@ img.logo {
     align-items: center;
     margin-left: 32vw;
     margin-right: 32vw;
-    position:fixed;
-    z-index:900;
+    position: fixed;
+    z-index: 900;
 }
 
 img.logomobile {
@@ -103,7 +100,134 @@ h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Media Query para telas menores (mobile) */
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1vh;
+}
+
+div#planos {
+    width: 100%;
+}
+
+.logo {
+    max-width: 40vh;
+    height: auto;
+}
+
+.planos-title {
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2vh;
+    font-size: 4vh;
+    margin-top: 15vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2vh;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 0 0 calc(24% - 1%);
+    background-color: transparent;
+    border: 0.3vh solid white;
+    text-align: center;
+    padding: 2vh;
+    box-sizing: border-box;
+    margin-right: 1%;
+    margin-bottom: 2vh;
+    min-width: auto;
+    overflow: hidden;
+    border-radius: 1vh;
+    height: 50vh;
+}
+
+.card:nth-child(4n) {
+    margin-right: 0;
+}
+
+.card h2 {
+    font-size: 3vh;
+    color: white;
+    margin-top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card img {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    margin-bottom: 1vh;
+    display: block;
+}
+
+.card h4 {
+    font-size: 4vh;
+    color: white;
+    margin-bottom: 1.5vh;
+}
+
+.card button {
+    background-color: #fff;
+    color: #f11a1a;
+    border: none;
+    padding: 2vh 1.5vh;
+    cursor: pointer;
+    width: 80%;
+    font-size: 2vh;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0.5vh;
+    border: 0.2vh solid #fff;
+    text-shadow: 0.1vh 0.1vh 0.1vh black;
+}
+
+.card button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.discount-button-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.discount-button {
+    background-color: #fff;
+    color: #f11a1a;
+    border: none;
+    padding: 2vh 1.5vh;
+    cursor: pointer;
+    font-size: 2vh;
+    border-radius: 1vh;
+    border: 0.2vh solid #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0.1vh 0.1vh 0.1vh black;
+}
+
+.discount-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
 @media (max-width: 768px) {
     body {
         flex-direction: column;
@@ -121,7 +245,6 @@ h6 {
         border-right: none;
         box-shadow: 0 0.5vh 1.6vh rgba(0, 0, 0, 0.7);
         border-top: 0.1vh solid white;
-        overflow-y: none;
     }
 
     .menu-item {
@@ -162,7 +285,6 @@ h6 {
         display: none;
     }
 
-    /* Ajustes do Slider para Mobile */
     .slide h1 {
         font-size: 5vw;
         top: 30%;
@@ -177,5 +299,83 @@ h6 {
     .next {
         font-size: 4vw;
         padding: 2vw;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1vh 0;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        flex: 0 0 calc(49% - 1%);
+        background-color: transparent;
+        border: 0.3vh solid white;
+        text-align: center;
+        padding: 2vh;
+        box-sizing: border-box;
+        margin-right: 1%;
+        margin-bottom: 2vh;
+        min-width: auto;
+        overflow: hidden;
+        border-radius: 1vh;
+        height: 29vh;
+    }
+
+    .card h2 {
+        font-size: 2vh;
+        color: white;
+        margin-top: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .card img {
+        width: 100%;
+        height: 12vh;
+        object-fit: cover;
+        margin-bottom: 1vh;
+        display: block;
+    }
+
+    .card button {
+        background-color: #fff;
+        color: #f11a1a;
+        border: none;
+        padding: 1.2vh 1.5vh;
+        cursor: pointer;
+        width: 80%;
+        font-size: 2vh;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 0.5vh;
+        border: 0.2vh solid #fff;
+        text-shadow: 0.1vh 0.1vh 0.1vh black;
+    }
+
+    .card h4 {
+        font-size: 3vh;
+        color: white;
+        margin-bottom: 1.5vh;
+    }
+
+    .planos-title {
+        color: white;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 1vh;
+        font-size: 3vh;
+        margin-top: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .discount-button-container {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
